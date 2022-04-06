@@ -21,3 +21,38 @@ New and improved API for the ReCT community of developers.
 | /users | Create a new user | POST |
 | /users/{id} | Returns a user with matching ID | GET |
 | /projects | Create a new project | POST |
+
+## Curl command to create something
+
+```shell
+curl http://localhost:8080/users \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '{"id": "4", ......}'
+
+```
+
+## Data for create request
+
+### Users
+
+| Name | Data type |
+|------|-----------|
+| ID | string |
+| Name | string |
+| Github | string |
+| Email | string |
+| Discord | string |
+
+
+### Project
+
+| Name | Data type |
+|------|-----------|
+| ID | string |
+| Title | string |
+| Description | string |
+| Private | bool |
+| Language | string |
+| Creator | string |
