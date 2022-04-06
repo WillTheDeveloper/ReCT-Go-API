@@ -63,7 +63,7 @@ func findUser(c *gin.Context) {
 var secrets = gin.H{
 	"foo":    gin.H{"email": "foo@bar.com", "phone": "123433"},
 	"austin": gin.H{"email": "austin@example.com", "phone": "666"},
-	"lena":   gin.H{"email": "lena@guapa.com", "phone": "523443"},
+	"will":   gin.H{"email": "lena@guapa.com", "phone": "523443"},
 }
 
 func main() {
@@ -80,7 +80,7 @@ func main() {
 		// get user, it was set by the BasicAuth middleware
 		user := c.MustGet(gin.AuthUserKey).(string)
 		if secret, ok := secrets[user]; ok {
-			c.JSON(http.StatusOK, gin.H{"user": user, "secret": secret})
+			c.JSON(http.StatusOK, gin.H{"user": user, "secret": secret, "all users": users})
 		} else {
 			c.JSON(http.StatusOK, gin.H{"user": user, "secret": "NO SECRET :("})
 		}
