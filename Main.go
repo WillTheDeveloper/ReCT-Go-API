@@ -68,7 +68,7 @@ func main() {
 	router.GET("/users/:id", findUser)
 
 	router.POST("/users", createUser)
-	router.POST("/users", createProject)
+	router.POST("/project", createProject)
 
 	router.Run("localhost:8080")
 }
