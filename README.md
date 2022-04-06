@@ -17,3 +17,5 @@ New and improved API for the ReCT community of developers.
 | /projects | List of projects | GET |
 | /projects/{id} | Returns a project with matching ID | GET |
 | /users | Create a new user | POST |
+| /users/{id} | Returns a user with matching ID | GET |
+| /projects | Create a new project | POST |

@@ -1,10 +1,11 @@
 package main
 
 type user struct {
-	ID     string `json:"id"`
-	Name   string `json:"name"`
-	Github string `json:"github"`
-	Email  string `json:"email"`
+	ID      string `json:"id"`
+	Name    string `json:"name"`
+	Github  string `json:"github"`
+	Email   string `json:"email"`
+	Discord string `json:"discord"`
 }
 
 type project struct {
