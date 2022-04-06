@@ -1,6 +1,8 @@
 # ReCT-Go-API
 New and improved API for the ReCT community of developers.
 
+[![Go Github Action](https://github.com/WillTheDeveloper/ReCT-Go-API/actions/workflows/go.yml/badge.svg)](https://github.com/WillTheDeveloper/ReCT-Go-API/actions/workflows/go.yml)
+
 ## Usage
 
 1. Clone the repository
